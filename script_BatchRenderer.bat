@@ -6,7 +6,6 @@ CALL "%SCRIPT_PATH%_config.bat" %1
 set CONFIG_LOADED=True
 IF "%OUTPUT_COMPILED_VIDEO_TO%"=="" (
 	set OUTPUT_COMPILED_VIDEO_TO="%INPUT_FILE_PATH%"
-	echo aasss
 )
 cscript.exe "%SCRIPT_PATH%script_getRAM.vbs"
 set AMOUNT_OF_RAM=%ERRORLEVEL%
